@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Elegant Intersection Observer for fade-up animations
     const observerOptions = {
         root: null,
         rootMargin: '0px',
