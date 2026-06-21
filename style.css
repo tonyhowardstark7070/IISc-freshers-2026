@@ -106,23 +106,23 @@ h1, h2, h3, .hero-quote, .hero-sub {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 15px; /* Increased gap for better spacing */
+    gap: 15px;
 }
 
 .nav-logo img {
-    width: 75px; /* Increased from 50px */
-    height: 75px; /* Increased from 50px */
+    width: 75px;
+    height: 75px;
     object-fit: contain;
     background: #FFFFFF;
     border-radius: 50%;
-    padding: 8px; /* Increased padding so logo doesn't touch the edges */
-    border: 2px solid var(--gold); /* Added a classy golden border */
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15); /* Slight glow */
+    padding: 8px;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
 }
 
 .nav-logo span {
-    font-weight: 700; /* Made bolder */
-    font-size: 1.5rem; /* Increased size */
+    font-weight: 700;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
     color: var(--text-main);
 }
@@ -234,15 +234,16 @@ h1, h2, h3, .hero-quote, .hero-sub {
     box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
 }
 
-.btn-outline {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--text-main);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.btn-insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #FFFFFF;
+    border: none;
 }
 
-.btn-outline:hover {
-    background: rgba(255, 255, 255, 0.1);
+.btn-insta:hover {
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(220, 39, 67, 0.3);
+    color: #FFFFFF;
 }
 
 .scroll-down {
@@ -533,7 +534,6 @@ footer p {
     .rep-info { flex-direction: column; }
     .msg-btn { width: 100%; }
     
-    /* Make logo slightly smaller on mobile so it doesn't break layout */
     .nav-logo img { width: 60px; height: 60px; }
     .nav-logo span { font-size: 1.2rem; }
 }
