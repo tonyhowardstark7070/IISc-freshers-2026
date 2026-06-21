@@ -92,7 +92,7 @@ h1, h2, h3, .hero-quote, .hero-sub {
 .navbar {
     position: fixed;
     top: 0; left: 0; width: 100%;
-    padding: 1rem 3rem;
+    padding: 1.2rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,20 +106,23 @@ h1, h2, h3, .hero-quote, .hero-sub {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px; /* Increased gap for better spacing */
 }
 
 .nav-logo img {
-    width: 50px;
-    height: 50px;
+    width: 75px; /* Increased from 50px */
+    height: 75px; /* Increased from 50px */
     object-fit: contain;
     background: #FFFFFF;
     border-radius: 50%;
-    padding: 5px;
+    padding: 8px; /* Increased padding so logo doesn't touch the edges */
+    border: 2px solid var(--gold); /* Added a classy golden border */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15); /* Slight glow */
 }
 
 .nav-logo span {
-    font-weight: 600;
+    font-weight: 700; /* Made bolder */
+    font-size: 1.5rem; /* Increased size */
     letter-spacing: 0.5px;
     color: var(--text-main);
 }
@@ -521,7 +524,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .navbar { padding: 1rem 1.5rem; }
+    .navbar { padding: 1.2rem 1.5rem; }
     .nav-badge { display: none; }
     .hero-card { padding: 3rem 1.5rem; }
     .btn-group { flex-direction: column; width: 100%; }
@@ -529,4 +532,8 @@ footer p {
     .rep-card { flex-direction: column; gap: 1.5rem; text-align: center; }
     .rep-info { flex-direction: column; }
     .msg-btn { width: 100%; }
+    
+    /* Make logo slightly smaller on mobile so it doesn't break layout */
+    .nav-logo img { width: 60px; height: 60px; }
+    .nav-logo span { font-size: 1.2rem; }
 }
